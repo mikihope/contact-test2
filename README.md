@@ -48,6 +48,15 @@ php artisan migrate --seed
 
 ![ER図](https://github.com/mikihope/contact-test2/commit/8781244d791d92b018dc00a1363b84a6ec150fb8)
 
+## 📍 動作確認URL一覧
+
+| ページ名 | URL | 内容 |
+|-----------|------|------|
+| トップページ | http://localhost | Laravel起動確認 |
+| 商品一覧 | http://localhost/products | 商品の一覧を表示 |
+| 商品登録 | http://localhost/products/create | 新しい商品を登録 |
+| バリデーション確認 | http://localhost/products/create | 入力を空のまま送信して確認 |
+| ログインページ（Fortify） | http://localhost/login | 認証機能の確認（必要に応じて） |
 
 
 
