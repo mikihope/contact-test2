@@ -39,6 +39,9 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 
-🧩 ER図
+## 🧩 ER図
+
+![ER図](./ER.png)
+
 
 
