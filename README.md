@@ -45,7 +45,10 @@ php artisan migrate --seed
 
 ## 🧩 ER図
 
-![ER図](https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png" alt="ER図" width="900">
+</p>
+
 
 
 ## 📍 動作確認URL一覧
