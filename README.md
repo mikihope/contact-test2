@@ -44,8 +44,8 @@ php artisan key:generate
 php artisan migrate --seed
 
 ## 🧩 ER図
+![ER図](ER.png)
 
-![ER図](https://github.com/mikihope/contact-test2/commit/8781244d791d92b018dc00a1363b84a6ec150fb8)
 
 ## 📍 動作確認URL一覧
 
