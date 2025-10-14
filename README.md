@@ -45,14 +45,7 @@ php artisan migrate --seed
 
 ## 🧩 ER図
 
-<!-- 通常のMarkdown画像 -->
-![ER図](ER.png)
-
-<!-- フォールバック（VSCodeのプレビューや一部レンダラ対策） -->
-<img src="ER.png" alt="ER図" width="900" />
-
-<!-- さらに念のため、GitHubで直接開けるリンクも置く -->
-🔗 画像が表示されない場合は [ER.png を直接開く](https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png)
+![ER図](https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png)
 
 
 ## 📍 動作確認URL一覧
