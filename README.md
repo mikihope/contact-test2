@@ -45,9 +45,7 @@ php artisan migrate --seed
 
 ## 🧩 ER図
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png" alt="ER図" width="900">
-</p>
+![ER図](/.ER.png)
 
 
 
