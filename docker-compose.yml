@@ -12,6 +12,7 @@ services:
       - mysql
     ports:
       - "9000:9000"
+      - "8000:8000"
     networks:
       - laravel-net
     build:

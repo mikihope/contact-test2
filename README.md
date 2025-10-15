@@ -44,8 +44,15 @@ php artisan key:generate
 php artisan migrate --seed
 
 ## 🧩 ER図
+<p align="center">
+  <img src="./ER.png" alt="ER図" width="800" style="max-width: 100%; height: auto;">
+</p>
 
-<img src="https://github.com/mikihope/contact-test2/blob/main/ER.png?raw=true" alt="ER図" width="800" />
+---
+
+※ もしGitHub上で画像が表示されない場合はこちらをクリック →  
+👉 [ER.pngを直接開く](https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png)
+
 
 ## 📍 動作確認URL一覧
 

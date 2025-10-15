@@ -12,9 +12,25 @@ use Illuminate\Support\Facades\Storage;
 class ProductController extends Controller
 {
     // 商品一覧ページ
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::all();
+        $query = Product::query();
+
+        // 🔍 キーワード検索
+        if ($request->filled('keyword')) {
+            $query->where('name', 'like', "%{$request->keyword}%");
+        }
+
+        // 💰 並び替え（高い順／低い順）
+        if ($request->filled('sort')) {
+            if ($request->sort === 'high') {
+                $query->orderBy('price', 'desc');
+            } elseif ($request->sort === 'low') {
+                $query->orderBy('price', 'asc');
+            }
+        }
+
+        $products = $query->get();
         return view('products.index', compact('products'));
     }
 
@@ -32,37 +48,38 @@ class ProductController extends Controller
         return view('products.create', compact('seasons'));
     }
 
-    public function store(\App\Http\Requests\ProductRequest $request)
-{
-    // 画像アップロード
-    if ($request->hasFile('image')) {
-        $imageName = Str::random(40) . '.' . $request->image->extension();
-        $request->image->storeAs('public/images', $imageName);
-    } else {
-        $imageName = null;
-    }
+    // 商品登録処理
+    public function store(ProductRequest $request)
+    {
+        // 画像アップロード
+        if ($request->hasFile('image')) {
+            $imageName = Str::random(40) . '.' . $request->image->extension();
+            $request->image->storeAs('public/images', $imageName);
+        } else {
+            $imageName = null;
+        }
 
-    // slug（日本語対応・空防止）
-    $slug = Str::slug($request->name, '-');
-    if (empty($slug)) {
-        $slug = Str::random(8); // ✅ ここが超重要！
-    }
+        // slug（日本語対応・空防止）
+        $slug = Str::slug($request->name, '-');
+        if (empty($slug)) {
+            $slug = Str::random(8);
+        }
 
-    // 商品登録
-    $product = \App\Models\Product::create([
-        'name' => $request->name,
-        'slug' => $slug,
-        'price' => $request->price,
-        'description' => $request->description,
-        'image' => $imageName,
-    ]);
+        // 商品登録
+        $product = Product::create([
+            'name' => $request->name,
+            'slug' => $slug,
+            'price' => $request->price,
+            'description' => $request->description,
+            'image' => $imageName,
+        ]);
 
-    // 季節を中間テーブルに保存
-    $product->seasons()->sync($request->seasons ?? []);
+        // 季節を中間テーブルに保存
+        $product->seasons()->sync($request->seasons ?? []);
 
-    return redirect()
-        ->route('products.index')
-        ->with('success', '商品を登録しました！');
+        return redirect()
+            ->route('products.index')
+            ->with('success', '商品を登録しました！');
     }
 
     // 商品編集画面
@@ -84,6 +101,7 @@ class ProductController extends Controller
             if ($product->image && Storage::disk('public')->exists('images/' . $product->image)) {
                 Storage::disk('public')->delete('images/' . $product->image);
             }
+
             // 新しい画像を保存
             $path = $request->file('image')->store('images', 'public');
             $product->image = basename($path);
