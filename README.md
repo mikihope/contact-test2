@@ -45,7 +45,7 @@ php artisan migrate --seed
 
 ## 🧩 ER図
 
-https://vscode-remote+wsl-002bubuntu.vscode-resource.vscode-cdn.net/home/ser/coachtech/laravel/contact-test2-new/image.png?version%3D1760502249178
+<img src="https://github.com/mikihope/contact-test2/blob/main/ER.png?raw=true" alt="ER図" width="800" />
 
 ## 📍 動作確認URL一覧
 
