@@ -50,14 +50,14 @@ php artisan migrate --seed
 
 ※ もしGitHub上で画像が表示されない場合はこちらをクリック →  
 👉 [ER.pngを直接開く](https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png)
-
+申し訳ございません。どうしても画像を表示させることができませんでした。
 
 ## 📍 動作確認URL一覧
 
 | ページ名 | URL | 内容 |
 |-----------|------|------|
-| トップページ | http://localhost | Laravel起動確認 |
-| 商品一覧 | http://localhost/products | 商品の一覧を表示 |
+| トップページ | http://localhost | Laravel起動確認 |　
+| 商品一覧 | http://localhost/products | 商品の一覧を表示 |（push時、何かの不具合で、画像と金額が消えてしまいました。）
 | 商品登録 | http://localhost/products/create | 新しい商品を登録 |
 | バリデーション確認 | http://localhost/products/create | 入力を空のまま送信して確認 |
 
