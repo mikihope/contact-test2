@@ -60,7 +60,7 @@ php artisan migrate --seed
 | 商品一覧 | http://localhost/products | 商品の一覧を表示 |
 | 商品登録 | http://localhost/products/create | 新しい商品を登録 |
 | バリデーション確認 | http://localhost/products/create | 入力を空のまま送信して確認 |
-| ログインページ（Fortify） | http://localhost/login | 認証機能の確認（必要に応じて） |
+
 
 
 
