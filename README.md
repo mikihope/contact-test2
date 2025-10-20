@@ -44,17 +44,6 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
 
-<<<<<<< HEAD
-## 🧩 ER図
-<p align="center">
-  <img src="./ER.png" alt="ER図" width="800" style="max-width: 100%; height: auto;">
-</p>
-
----
-
-※ もしGitHub上で画像が表示されない場合はこちらをクリック →  
-👉 [ER.pngを直接開く](https://raw.githubusercontent.com/mikihope/contact-test2/main/ER.png)
-申し訳ございません。どうしても画像を表示させることができませんでした。
 =======
 
 🧩 ER図
@@ -64,13 +53,6 @@ php artisan migrate --seed
 ## 📍 動作確認URL一覧
 | ページ名 | URL | 内容 |
 |-----------|------|------|
-<<<<<<< HEAD
-| トップページ | http://localhost | Laravel起動確認 |　
-| 商品一覧 | http://localhost/products | 商品の一覧を表示 |（push時、何かの不具合で、画像と金額が消えてしまいました。）
-| 商品登録 | http://localhost/products/create | 新しい商品を登録 |
-| バリデーション確認 | http://localhost/products/create | 入力を空のまま送信して確認 |
-
-
 
 =======
 | トップページ | http://localhost | Laravel起動確認 |
