@@ -57,6 +57,6 @@ php artisan migrate --seed
 | トップページ | http://localhost | Laravel起動確認 |
 | 商品一覧 | http://localhost/products | 商品一覧・検索・並び替え |
 | 商品登録 | http://localhost/products/create | 新規登録フォーム（バリデーション確認） |
->>>>>>> 0eb5b53 (update: READMEにER図を追加)
+
 
 
