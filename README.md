@@ -47,6 +47,8 @@ php artisan migrate --seed
 =======
 🧩 ER図
 <img width="562" height="161" alt="ER" src="https://github.com/user-attachments/assets/ca49c7cb-0fb4-4749-aeeb-898f9c4c204b" />
+ER図は ER.png に含まれています。GitHubプレビューでは表示できませんでしたが、ファイルとして確認可能です。
+
 
 
 ## 📍 動作確認URL一覧
