@@ -45,9 +45,9 @@ php artisan key:generate
 php artisan migrate --seed
 
 =======
-
 🧩 ER図
-<p align="center"> <img src="./ER.png" alt="ER図" width="800"> </p>
+<img width="562" height="161" alt="ER" src="https://github.com/user-attachments/assets/ca49c7cb-0fb4-4749-aeeb-898f9c4c204b" />
+
 
 ## 📍 動作確認URL一覧
 | ページ名 | URL | 内容 |
