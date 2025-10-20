@@ -134,9 +134,8 @@ return [
         //App\Providers\AuthServiceProvider::class,
         //App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-        // ✅ Fortifyカスタマイズ用プロバイダ（ここが重要！）
         App\Providers\FortifyServiceProvider::class,
+
     ],
 
     /*

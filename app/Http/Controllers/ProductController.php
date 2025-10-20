@@ -112,6 +112,7 @@ class ProductController extends Controller
             'name' => $request->name,
             'price' => $request->price,
             'description' => $request->description,
+            'image' => $product->image, // ★追加！
         ]);
 
         $product->seasons()->sync($request->seasons ?? []);
