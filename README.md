@@ -48,7 +48,6 @@ php artisan migrate --seed
 
 🧩 ER図
 <p align="center"> <img src="./ER.png" alt="ER図" width="800"> </p>
->>>>>>> 0eb5b53 (update: READMEにER図を追加)
 
 ## 📍 動作確認URL一覧
 | ページ名 | URL | 内容 |
